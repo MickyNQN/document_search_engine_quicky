@@ -1,0 +1,37 @@
+<div class="col-sm-12">
+    <div class="col-sm-4"></div>
+
+    <div class="col-sm-4" style="text-align: center;">
+    	<form class="form-signin">       
+			<h2 class="form-signin-heading">Add new document</h2>
+			
+			<input type="text" class="form-control" ng-model="title" placeholder="title" required="" autofocus="" /><br>
+			
+			<input type="text" class="form-control" ng-model="caption" placeholder="Brief details about doc" required=""/><br>      
+			
+			<input type="text" class="form-control" ng-model="keywords" placeholder="Comma separated keywords" required=""/><br>      
+			
+			Thumbnail:
+			<input type="file" class="form-control" file-model="files"><br>
+
+			Document:
+			<input type="file" class="form-control" file-model="files1" required=""/><br>
+			<!--
+			<label class="checkbox">
+			<input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Remember me
+			</label>
+			-->
+			<button class="button" ng-click="addDocument()" type="submit">Add Docuent</button><br>
+			{{id}} , {{result}}
+		</form>
+    </div>
+    
+    <div class="col-sm-4"></div>
+</div>
+
+<div class="right-corder-container">
+    <button class="right-corder-container-button" ng-click="go_to_home()">
+        <!--<span class="short-text"><i class="fa fa-home fa-2x"></i></span>-->
+        <i class="fa fa-home"></i>
+    </button>
+</div>

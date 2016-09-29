@@ -1,0 +1,34 @@
+<div class="col-sm-12">
+    
+    <div class="col-sm-8">
+        <h1>Stats</h1>
+        <table>
+          <tr>
+            <td>Total Documents  - </td>
+            <td>{{data.docs}}</td> 
+          </tr>
+          <tr>
+            <td>Total Visitors  - </td>
+            <td>{{data.visitors}}</td> 
+          </tr>
+        </table>
+    </div>
+
+    <div class="col-sm-4">
+        <ul>
+            Trends<br>
+            <div ng-repeat="trend in trends.data">
+                <a href="">#{{trend.keyword}}</a><br>
+                {{trend.visits}} People <br><br>
+            </div>
+        </ul>
+    </div>
+</div>
+
+
+<div class="right-corder-container">
+    <button class="right-corder-container-button" ng-click="go_to_home()">
+        <!--<span class="short-text"><i class="fa fa-home fa-2x"></i></span>-->
+        <i class="fa fa-home"></i>
+    </button>
+</div>
